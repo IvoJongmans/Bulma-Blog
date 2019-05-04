@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+    <!-- <link rel="stylesheet" href="bulmadebug.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title>Bulma First</title>
+    <script>
+                
+    </script>
+</head>
+
+<style>
+
+  .grid {
+    display: grid;
+    grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];    
+  }
+
+  .grid * { grid-column: md; }
+  .grid-xl { grid-column: xl; }
+
+  .is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+</style>
+<body>
+        <section class="section is-paddingless-horizontal">
+                <div class="container grid">
+                  <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li class="is-active"><a href="#" aria-current="page">How to make a beautiful blog</a></li>
+                    </ul>
+                  </nav>                  
+                </div>
+              </section>
+
+        <section class="section is-paddingless-horizontal" style="padding-top: 0;">
+          <div class="container grid">
+            <article class="media center">
+              <figure class="media-left">
+                <figure class="image is-64x64">
+                  <img src="ik.png">
+                </figure>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p class="is-size-5">
+                    <strong>Ivo Jongmans</strong> 
+                    <a>@ivo_jongmans</a><br>
+							  	  <span class="has-text-grey">Mijn eerst Bulma Blog<br>
+								    <time datetime="2018-04-20">20 Mei</time> · 20 min lezen</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+          
+          <div class="section is-paddingless-horizontal">
+            <h1 class="title is-2">Hoe ik voor het eerst een Bulma Blog maakte</h1>
+            <h2 class="subtitle is-3">EAT - SLEEP - CODE - REPEAT</h2>
+          </div>
+        </div>
+        </section>
+
+        
+</body>
+</html>
